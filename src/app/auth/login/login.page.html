@@ -1,0 +1,29 @@
+<ion-header>
+  <!-- setting the navbar colour -->
+  <ion-toolbar color = "primary">
+    <ion-title>Login to Petfinder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" [(ngModel)]= "user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]= "user.password"></ion-input>
+  </ion-item>
+  <div class="buttons">
+      <button ion-button color="primary"(click)= "login(user)">Login</button>
+      <p> Don't have an account? </p>
+      <button ion-button (click)="signup(user)">Signup</button>
+  </div>
+
+  <div class="info">
+  <p id="text"> Powered by petfinder API - www.petfinder.com</p> 
+  </div>
+
+</ion-content>

@@ -2,3 +2,36 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.ion-button {
+  width: 100%;
+  background-color: #7603a8;
+}
+
+.favourite {
+  top: -30px;
+  right: 0;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinate;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.submitButton {
+  position: absolute;
+  right: 50%;
+}
+
+.filterButton {
+  position: absolute;
+  left: 92%;
+}

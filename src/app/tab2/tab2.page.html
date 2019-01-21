@@ -1,9 +1,29 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Two
+      Search for a shelter
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+  <form id="shelter-form">
+    <ion-item>
+      <ion-label>Select a location</ion-label>
+      <ion-select id="shelter">
+        <ion-select-option value="California">California</ion-select-option>
+        <ion-select-option value="Washington">Washington</ion-select-option>
+        <ion-select-option value="Canada">Canada</ion-select-option>
+        <ion-select-option value="Tennessee">Tennessee</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <button ion-button id="submit" block>Find a shelter</button>
+    </ion-item>
+  </form>
+
+  <div id="shelterResults">
+    
+  </div>
+
+</ion-content>

@@ -1,9 +1,19 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Three
+      View random Pets
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content padding>
+
+  <button ion-button (click)="reload()" style="background-color: white;"><h5>Show Next Pet</h5>
+    <ion-icon name="refresh"></ion-icon>
+  </button>
+
+
+  <div id="random-results"></div>
+
+</ion-content>
+<!--window.location.reload()-->

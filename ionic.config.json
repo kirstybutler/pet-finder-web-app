@@ -1,5 +1,7 @@
 {
   "name": "pet-project",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
